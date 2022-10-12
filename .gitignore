@@ -1,6 +1,7 @@
 *
 !*.go
 !*.proto
+!Caddyfile
 !.github/CODEOWNERS
 !.github/dependabot.yml
 !.github/workflows/main.yml
