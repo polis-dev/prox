@@ -1,0 +1,10 @@
+*
+!*.go
+!*.proto
+!.github/CODEOWNERS
+!.github/dependabot.yml
+!.github/workflows/main.yml
+!.gitignore
+!Dockerfile
+!go.mod
+!go.sum
