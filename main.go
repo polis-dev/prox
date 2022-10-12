@@ -24,6 +24,10 @@ var builder = x.Builder{
 			PackagePath: "github.com/mholt/caddy-ratelimit",
 			Version:     "master",
 		},
+		{
+			PackagePath: "github.com/awoodbeck/caddy-validate-github",
+			Version: "main",
+		},
 // 		{
 // 			PackagePath: "github.com/abiosoft/caddy-json-schema",
 // 			Version:     "master",
