@@ -50,7 +50,6 @@ jobs:
         with:
           context: "."
           tags: ${{ steps.meta.outputs.tags }}
-          platforms: linux/amd64,linux/arm64
           push: ${{ github.event_name != 'pull_request' && !startsWith('workflow_', github.event_name) }}
           labels: |-
             org.opencontainers.image.title=${{ github.workflow }}
