@@ -2,16 +2,8 @@
   order tailscale_auth after basicauth
 }
 
-:2019 {
+:8080, :2019 {
     tailscale_auth
-    bind tailscale/admin localhost
-    # header_up X-Auth-User {http.auth.user.tailscale_login}
-    # header_up X-Auth-Email {http.auth.user.tailscale_user}
-    # header_up X-Auth-Name {http.auth.user.tailscale_name}
-    # header_up X-Auth-Net {http.auth.user.tailscale_tailnet}
-}
-
-:8080 {
     bind tailscale/{$HOST:xproxy} localhost
     file_server {
       hide .* _* Dockerfile Caddyfile
@@ -21,7 +13,3 @@
     # header_up X-Auth-Name {http.auth.user.tailscale_name}
     # header_up X-Auth-Net {http.auth.user.tailscale_tailnet}
 }
-
-localhost
-
-respond "Hello, world!"
