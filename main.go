@@ -24,10 +24,10 @@ var builder = x.Builder{
 			PackagePath: "github.com/mholt/caddy-ratelimit",
 			Version:     "master",
 		},
-		{
-			PackagePath: "github.com/abiosoft/caddy-json-schema",
-			Version:     "master",
-		},
+// 		{
+// 			PackagePath: "github.com/abiosoft/caddy-json-schema",
+// 			Version:     "master",
+// 		},
 	},
 	Replacements: []x.Replace{},
 	RaceDetector: false,
