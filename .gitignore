@@ -5,6 +5,7 @@
 !.github/CODEOWNERS
 !.github/dependabot.yml
 !.github/workflows/main.yml
+!index.html
 !.gitignore
 !Dockerfile
 !go.mod
